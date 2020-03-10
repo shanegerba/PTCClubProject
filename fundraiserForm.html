@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Fundraiser Form</title>
+</head>
+<body>
+    <h1>Student Organization Fundraising Request Form</h1>
+    <form id="fundraisingInfo"name="fundraisingInfo">
+        <!--ORGANIZATION  NAME-->
+        <label for="orgName">Organization Name</label>
+        <input type="text"name="orgName"class="form-control"maxlength="50"placeholder="Organization Name"required><br>
+        <!--CONTACT NAME-->
+        <label for="contactName">Contact Name</label>
+        <input type="text"name="contactName"class="form-control"maxlength="70"placeholder="Contact Name"required>
+        <!--CONTACT EMAIL-->
+        <label for="orgEmail">Contact Email</label>
+        <input type="email"name="orgEmail"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--PROPOSED DATES-->
+        <label for="fundraiserDate">Proposed Date</label>
+        <input type="date"name="fundraiserDate"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--FUNDRAISER DESCRIPTION-->
+        <textArea name="fundraiserDescription"type="fundraiserDescription"class="form-control"rows="4"cols="40"required>Fundraiser Description</textArea><br>
+        <!--LOCATION OF FUNDRAISER-->
+        <label for="fundraiserLocation">Fundraiser Location</label>
+        <input type="text"name="fundraiserLocation"class="form-control"maxlength="50"placeholder="Location"required><br>
+        <!--Reason for Funding-->
+        <label for="fundPurpose">Fundraiser Purpose</label>
+        <input type="text"name="fundPurpose"class="form-control"maxlength="70"placeholder="Purpose"required>
+        <!--Upfront Cost-->
+        <label for="upfrontCost">Upfront Cost (USD)</label>
+        <input type="number"name="upfrontCost"class="upfrontCost"placeholder="Cost"required><br>
+        <!--Advisor Online Signature-->
+        <label for="adviserSIgnature">Adviser's Online Signature</label>
+        <input type="text"name="adviserSignature"class="form-control"maxlength="70"placeholder="Online SIgnature"required><br>
+        <!--FORM BUTTONS-->
+        <input type="submit"class="btn btn-primary"value="Submit Form">
+        <input type="reset"class="btn btn-danger"value="Clear the form">
+    </form>
+</body>
+</html>
