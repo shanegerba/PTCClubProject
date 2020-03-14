@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Fundraiser</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <h1 class="site-heading text-center text-white d-none d-lg-block">
+    <span class="site-heading-upper text-primary mb-3">Pittsburgh Technical College</span>
+    <span class="site-heading-lower">Fundraiser Form</span>
+  </h1>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="index.html">Featured</a>
+          </li>
+          <li class="nav-item active px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="fundraiser.html">Fundraiser
+              <span class="sr-only">(current)</span>
+              </a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="meetingtrack.html">Meeting Trackers</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="checkrequest.html">Check Request</a>
+          </li>
+            <li class="nav-item px-lg-4">
+            <a class="nav-link text-uppercase text-expanded" href="all.html">All</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--Form goes here-->
+    <br>
+    
+    <div class="row">
+        <div class="col-md-8 offset-2">
+        <h1 class="fundForm">Student Organization Fundraising Request Form</h1>
+        <form id="fundraisingInfo"name="fundraisingInfo">
+        <!--ORGANIZATION  NAME-->
+        <label for="orgName" class="fundFormSub">Organization Name</label>
+        <input type="text"name="orgName"class="form-control"maxlength="50"placeholder="Organization Name"required><br>
+        <!--CONTACT NAME-->
+        <label for="contactName" class="fundFormSub">Contact Name</label>
+        <input type="text"name="contactName"class="form-control"maxlength="70"placeholder="Contact Name"required>
+        <!--CONTACT EMAIL-->
+        <label for="orgEmail" class="fundFormSub">Contact Email</label>
+        <input type="email"name="orgEmail"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--PROPOSED DATES-->
+        <label for="fundraiserDate" class="fundFormSub">Proposed Date</label>
+        <input type="date"name="fundraiserDate"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--FUNDRAISER DESCRIPTION-->
+        <label for="fundraiserDescription" class="fundFormSub">Fundraiser Description</label>
+        <textArea name="fundraiserDescription"type="fundraiserDescription"class="form-control"rows="4"cols="40"required>Fundraiser Description</textArea><br>
+        <!--LOCATION OF FUNDRAISER-->
+        <label for="fundraiserLocation" class="fundFormSub">Fundraiser Location</label>
+        <input type="text"name="fundraiserLocation"class="form-control"maxlength="50"placeholder="Location"required><br>
+        <!--Reason for Funding-->
+        <label for="fundPurpose" class="fundFormSub">Fundraiser Purpose</label>
+        <input type="text"name="fundPurpose"class="form-control"maxlength="70"placeholder="Purpose"required>
+        <!--Upfront Cost-->
+        <label for="upfrontCost" class="fundFormSub">Upfront Cost (USD)</label>
+        <input type="number"name="upfrontCost"class="upfrontCost"placeholder="Cost"required><br>
+        <!--Advisor Online Signature-->
+        <label for="adviserSIgnature" class="fundFormSub">Adviser's Online Signature</label>
+        <input type="text"name="adviserSignature"class="form-control"maxlength="70"placeholder="Online SIgnature"required><br>
+        <!--FORM BUTTONS-->
+        <input type="submit"class="btn btn-primary"value="Submit Form">
+        <input type="reset"class="btn btn-danger"value="Clear the form">
+    </form>
+        </div>
+    </div>
+    
+    <br>
+
+  <footer class="footer text-faded text-center py-5">
+    <div class="container">
+      <p class="m-0 small">By Shane G, Joe C, Angelo C, and Justin B</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
