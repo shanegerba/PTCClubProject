@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Fund Raiser</title>
+  <title>Fundraiser</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -19,6 +19,8 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
+
 
 </head>
 
@@ -26,7 +28,7 @@
 
   <h1 class="site-heading text-center text-white d-none d-lg-block">
     <span class="site-heading-upper text-primary mb-3">Pittsburgh Technical College</span>
-    <span class="site-heading-lower">Fund Raiser Form</span>
+    <span class="site-heading-lower">Fundraiser Form</span>
   </h1>
 
   <!-- Navigation -->
@@ -42,7 +44,8 @@
             <a class="nav-link text-uppercase text-expanded" href="index.html">Featured</a>
           </li>
           <li class="nav-item active px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="fundraiser.html">Fund Raiser
+            <a class="nav-link text-uppercase text-expanded" href="fundraiser.html">Fundraiser
+
               <span class="sr-only">(current)</span>
               </a>
           </li>
@@ -60,30 +63,53 @@
     </div>
   </nav>
 
-
-  <section class="page-section about-heading">
-    <div class="container">
-      <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="img/about.jpg" alt="">
-      <div class="about-heading-content">
-        <div class="row">
-          <div class="col-xl-9 col-lg-10 mx-auto">
-            <div class="bg-faded rounded p-5">
-              <h2 class="section-heading mb-4">
-                <span class="section-heading-upper">Strong Coffee, Strong Roots</span>
-                <span class="section-heading-lower">About Our Cafe</span>
-              </h2>
-              <p>Founded in 1987 by the Hernandez brothers, our establishment has been serving up rich coffee sourced from artisan farmers in various regions of South and Central America. We are dedicated to travelling the world, finding the best coffee, and bringing back to you here in our cafe.</p>
-              <p class="mb-0">We guarantee that you will fall in <em>lust</em> with our decadent blends the moment you walk inside until you finish your last sip. Join us for your daily routine, an outing with friends, or simply just to enjoy some alone time.</p>
-            </div>
-          </div>
+<!--Form goes here-->
+    <br>
+    
+    <div class="row">
+        <div class="col-md-8 offset-2">
+        <h1 class="fundForm">Student Organization Fundraising Request Form</h1>
+        <form id="fundraisingInfo"name="fundraisingInfo">
+        <!--ORGANIZATION  NAME-->
+        <label for="orgName" class="fundFormSub">Organization Name</label>
+        <input type="text"name="orgName"class="form-control"maxlength="50"placeholder="Organization Name"required><br>
+        <!--CONTACT NAME-->
+        <label for="contactName" class="fundFormSub">Contact Name</label>
+        <input type="text"name="contactName"class="form-control"maxlength="70"placeholder="Contact Name"required>
+        <!--CONTACT EMAIL-->
+        <label for="orgEmail" class="fundFormSub">Contact Email</label>
+        <input type="email"name="orgEmail"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--PROPOSED DATES-->
+        <label for="fundraiserDate" class="fundFormSub">Proposed Date</label>
+        <input type="date"name="fundraiserDate"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--FUNDRAISER DESCRIPTION-->
+        <label for="fundraiserDescription" class="fundFormSub">Fundraiser Description</label>
+        <textArea name="fundraiserDescription"type="fundraiserDescription"class="form-control"rows="4"cols="40"required>Fundraiser Description</textArea><br>
+        <!--LOCATION OF FUNDRAISER-->
+        <label for="fundraiserLocation" class="fundFormSub">Fundraiser Location</label>
+        <input type="text"name="fundraiserLocation"class="form-control"maxlength="50"placeholder="Location"required><br>
+        <!--Reason for Funding-->
+        <label for="fundPurpose" class="fundFormSub">Fundraiser Purpose</label>
+        <input type="text"name="fundPurpose"class="form-control"maxlength="70"placeholder="Purpose"required>
+        <!--Upfront Cost-->
+        <label for="upfrontCost" class="fundFormSub">Upfront Cost (USD)</label>
+        <input type="number"name="upfrontCost"class="upfrontCost"placeholder="Cost"required><br>
+        <!--Advisor Online Signature-->
+        <label for="adviserSIgnature" class="fundFormSub">Adviser's Online Signature</label>
+        <input type="text"name="adviserSignature"class="form-control"maxlength="70"placeholder="Online SIgnature"required><br>
+        <!--FORM BUTTONS-->
+        <input type="submit"class="btn btn-primary"value="Submit Form">
+        <input type="reset"class="btn btn-danger"value="Clear the form">
+    </form>
         </div>
-      </div>
     </div>
-  </section>
+    
+    <br>
 
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 small">By Shane G, Joe C, Angelo C, and Justin B</p>
+
     </div>
   </footer>
 

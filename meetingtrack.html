@@ -19,6 +19,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/business-casual.min.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
 </head>
 
@@ -42,7 +43,8 @@
             <a class="nav-link text-uppercase text-expanded" href="index.html">Featured</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="fundraiser.html">Fund Raiser</a>
+            <a class="nav-link text-uppercase text-expanded" href="fundraiser.html">Fundraiser</a>
+
           </li>
           <li class="nav-item active px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="meetingtrack.html">Meeting Trackers
@@ -59,73 +61,52 @@
       </div>
     </div>
   </nav>
-
-  <section class="page-section">
-    <div class="container">
-      <div class="product-item">
-        <div class="product-item-title d-flex">
-          <div class="bg-faded p-5 d-flex ml-auto rounded">
-            <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Blended to Perfection</span>
-              <span class="section-heading-lower">Coffees &amp; Teas</span>
-            </h2>
-          </div>
+<br>
+    
+  <!--Form goes here-->
+    <div class="row">
+        <div class="col-md-8 offset-2">
+            <h1 class="fundForm">Meeting Event Tracker Form</h1>
+    <form id="fundraisingInfo"name="fundraisingInfo">
+        <!--ORGANIZATION  NAME-->
+        <label for="orgName" class="fundFormSub">Name of Student Organization</label>
+        <input type="text"name="orgName"class="form-control"maxlength="50"placeholder="Organization Name"required><br>
+        <!--CONTACT NAME-->
+        <label for="contactName" class="fundFormSub">Contact Name</label>
+        <input type="text"name="contactName"class="form-control"maxlength="70"placeholder="Contact Name"required>
+        <!--CONTACT EMAIL-->
+        <label for="orgEmail" class="fundFormSub">Contact Email</label>
+        <input type="email"name="orgEmail"class="form-control"maxlength="50"placeholder="Contact Email"required><br>
+        <!--PROPOSED DATES-->
+        <label for="fundraiserDate" class="fundFormSub">Proposed Date</label>
+        <input type="date"name="fundraiserDate"class="form-control"maxlength="50"placeholder="Date"required>
+        <!--PROPOSED DATES-->
+        <label for="fundraiserDate" class="fundFormSub">Proposed Start Time</label>
+        <input type="time"name="fundraiserTime"class="form-control"maxlength="50"placeholder="Time"required><br>
+        <!--NUMBER OF ATTENDEES-->
+        <label for="attendeeNumber" class="fundFormSub">Number of Attending Members</label>
+        <input type="number"name="attendeeNumber"class="form-control"max="300"placeholder="Number of Attendants"required><br>
+        <!--COST OF EVENT-->
+        <label for="eventCost" class="fundFormSub">Cost of Event (USD)</label>
+        <input type="number"name="eventCost"class="form-control"placeholder="Event Cost (USD)"required><br>
+        <!--FUTURE EVENTS-->
+        <label for="futureEvents" class="fundFormSub">Description of Future Events</label>
+        <textArea name="futureEvents"type="futureEvents"class="form-control"rows="4"cols="40"required>Brief description of future events</textArea><br>
+        <!--NUMBER OF CURRENT MEMBERS-->
+        <label for="currentMembers" class="fundFormSub">Number of Current Members</label>
+        <input type="number"name="currentMembers"class="form-control"placeholder="Current Member Count"required><br>
+        <input type="submit"class="btn btn-primary"value="Submit Form">
+        <input type="reset"class="btn btn-danger"value="Clear the form">
+    </form>
         </div>
-        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-01.jpg" alt="">
-        <div class="product-item-description d-flex mr-auto">
-          <div class="bg-faded p-5 rounded">
-            <p class="mb-0">We take pride in our work, and it shows. Every time you order a beverage from us, we guarantee that it will be an experience worth having. Whether it's our world famous Venezuelan Cappuccino, a refreshing iced herbal tea, or something as simple as a cup of speciality sourced black coffee, you will be coming back for more.</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </section>
-
-  <section class="page-section">
-    <div class="container">
-      <div class="product-item">
-        <div class="product-item-title d-flex">
-          <div class="bg-faded p-5 d-flex mr-auto rounded">
-            <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">Delicious Treats, Good Eats</span>
-              <span class="section-heading-lower">Bakery &amp; Kitchen</span>
-            </h2>
-          </div>
-        </div>
-        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
-        <div class="product-item-description d-flex ml-auto">
-          <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="page-section">
-    <div class="container">
-      <div class="product-item">
-        <div class="product-item-title d-flex">
-          <div class="bg-faded p-5 d-flex ml-auto rounded">
-            <h2 class="section-heading mb-0">
-              <span class="section-heading-upper">From Around the World</span>
-              <span class="section-heading-lower">Bulk Speciality Blends</span>
-            </h2>
-          </div>
-        </div>
-        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-03.jpg" alt="">
-        <div class="product-item-description d-flex mr-auto">
-          <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Travelling the world for the very best quality coffee is something take pride in. When you visit us, you'll always find new blends from around the world, mainly from regions in Central and South America. We sell our blends in smaller to large bulk quantities. Please visit us in person for more details.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+    
+    <br>
+    
   <footer class="footer text-faded text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 small">By Shane G, Joe C, Angelo C, and Justin B</p>
+
     </div>
   </footer>
 

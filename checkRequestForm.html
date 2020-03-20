@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Fundraiser Form</title>
+</head>
+<body>
+    <h1>Student Organization - Check Request Form</h1>
+    <form id="fundraisingInfo"name="fundraisingInfo">
+        <!--ORGANIZATION  NAME-->
+        <label for="orgName">Request for payment to</label>
+        <input type="text"name="orgName"class="form-control"maxlength="50"placeholder="Full Name of Payee/Organization"required><br>
+        <!--CONTACT NAME-->
+        <label for="contactName">Amount to be paid</label>
+        <input type="text"name="contactName"class="form-control"maxlength="70"placeholder="Ammount to be paid"required><br>
+        <textArea name="fundraiserDescription"type="fundraiserDescription"class="form-control"rows="4"cols="40"required>Reason for request</textArea><br>
+        <!--PROPOSED DATES-->
+        <label for="fundraiserDate">Individual requesting check</label>
+        <input type="text"name="fundraiserDate"class="form-control"maxlength="50"placeholder="Individual Check"required>
+        <!--FUNDRAISER DESCRIPTION-->
+        <br>
+        <!--LOCATION OF FUNDRAISER-->
+        <label for="fundraiserLocation">Organization to be charged</label>
+        <input type="text"name="fundraiserLocation"class="form-control"maxlength="50"placeholder="The organization charged"required><br>
+        <!--Reason for Funding-->
+        <label for="fundPurpose">Indicate what date this check is needed</label>
+        <input type="date"name="fundPurpose"class="form-control"maxlength="70"placeholder="Date Needed"required><br>
+        <!--Upfront Cost-->
+        <label for="upfrontCost">2nd signature for approval</label>
+        <input type="number"name="upfrontCost"class="upfrontCost"placeholder="Signature Needed"required><br>
+        <!--Advisor Online Signature-->
+        <label for="adviserSIgnature">Today's Date</label>
+        <input type="date"name="adviserSignature"class="form-control"maxlength="70"placeholder="Today's Date"required><br>
+        <textArea name="fundraiserDescription"type="fundraiserDescription"class="form-control"rows="4"cols="40"required>Comments</textArea><br>
+        <br>
+        <label for="RequestApproved">Request Approved By</label>
+        <input type="text"name="RequestApproved"class="form-control"maxlength="50"placeholder="Request approved by"required>
+        <label for="funDate">Date</label>
+        <input type="date"name="funDate"class="form-control"maxlength="70"placeholder="Date Approved"required><br>
+        <label for="RequestApprovedd">Check #</label>
+        <input type="text"name="RequestApprovedd"class="form-control"maxlength="50"placeholder="Check #"required>
+        <label for="funDatee">Date Issued</label>
+        <input type="date"name="funDatee"class="form-control"maxlength="70"placeholder="Date Issued"required><br>
+        <label for="funDateee">Date mailed/picked up</label>
+        <input type="date"name="funDateee"class="form-control"maxlength="70"placeholder="Date mailed/picked up"required><br>
+        <!--FORM BUTTONS-->
+        <input type="submit"class="btn btn-primary"value="Submit Form">
+        <input type="reset"class="btn btn-danger"value="Clear the form">
+    </form>
+</body>
+</html>
