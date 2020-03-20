@@ -41,6 +41,7 @@ p {
   display: block;
   font-size: 2rem;
   font-weight: 800;
+    
 }
 
 .site-heading .site-heading-lower {
@@ -90,7 +91,6 @@ p {
 
 #mainNav .navbar-nav .nav-item.active .nav-link {
   color: /*#1576C8*/#e6a756;
-
 }
 
 @media (min-width: 992px) {
@@ -270,9 +270,35 @@ p {
     
 }
 
-.placeholder{
-    font-size: 36pt;
+.carouselHeading{
+    font-size: 24pt;
     background-color: rgba(47, 23, 15, 0.6);
     
 }
 
+.carouselCaption{
+    font-size: 12pt;
+    background-color: rgba(47, 23, 15, 0.6);
+    
+}
+
+.carousel {
+  width:675px;
+  height:450px;
+}
+
+.listColor{
+    color: #e6a756;
+    
+}
+
+.bgColor{
+    background-color: rgba(47, 23, 15, 0.6);
+    
+}
+
+.listColorUL{
+    text-decoration: underline;
+    text-decoration-color: #e6a756;
+    
+}
